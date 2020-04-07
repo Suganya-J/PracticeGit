@@ -52,10 +52,10 @@ public class AddCommentsToHost extends TestBase{
 		computers = new ComputerManagement(driver, wait);
 		moduleName = AddCommentsToHost.class.getSimpleName();
 	}
-	// *** Make sure to keep your downloads directory empty before running this test**/
+	
 	@Test
 	public void addingCommentsfromSuperAdmin() {
-		// Login to the account by entering credentials.
+		
 		login.launchURL(repository.getProperty("rpcLoginPage"));
 		login.enterText(repository.getProperty("txtbxEmail"), "ID", "suganya.panneerselvam+dec24@idrive.com");
 		login.enterText(repository.getProperty("txtbxPWD"), "ID", "test90");
