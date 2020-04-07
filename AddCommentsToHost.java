@@ -52,7 +52,7 @@ public class AddCommentsToHost extends TestBase{
 		computers = new ComputerManagement(driver, wait);
 		moduleName = AddCommentsToHost.class.getSimpleName();
 	}
-	// *** Make sure to keep your downloads directory empty before running this test**/
+	
 	@Test
 	public void addingCommentsfromSuperAdmin() {
 		// Login to the account by entering credentials.
