@@ -71,7 +71,7 @@ public class AddCommentsToHost extends TestBase{
 			//branch 2 change
 			System.out.println("Computer status is not online");
 			moduleTestResult = "Fail";
-			testResultComment = "\n" + e.getMessage();
+			testResultComment = "\n" + e.getMessage();.
 			System.out.println(e.getMessage());
 			System.out.println(e.getMessage());
 		}
