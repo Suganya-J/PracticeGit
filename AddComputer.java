@@ -51,10 +51,10 @@ public class AddComputer extends TestBase{
 		computers = new ComputerManagement(myBrowser, wait);
 		moduleName = AddComputer.class.getSimpleName();
 	}
-	// *** Make sure to keep your downloads directory empty before running this test**/
+	
 	@Test
 	public void addComputerfromSuperAdmin() {
-		// Login to the account by entering credentials.
+		
 		login.launchURL(repository.getProperty("rpcLoginPage"));
 		login.enterText(repository.getProperty("txtbxEmail"), "ID", "suganya.panneerselvam+dec24@idrive.com");
 		login.enterText(repository.getProperty("txtbxPWD"), "ID", "test90");
