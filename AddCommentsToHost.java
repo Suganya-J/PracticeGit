@@ -68,6 +68,7 @@ public class AddCommentsToHost extends TestBase{
 					.visibilityOfElementLocated(By.xpath(repository.getProperty("computers.StatusOnline1"))));
 
 		} catch (Exception e) {
+			//branch 2 change
 			System.out.println("Computer status is not online");
 			moduleTestResult = "Fail";
 			testResultComment = "\n" + e.getMessage();
