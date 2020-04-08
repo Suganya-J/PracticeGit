@@ -62,12 +62,13 @@ public class AddCommentsToHost extends TestBase{
 		login.click(repository.getProperty("btnLogin"), "ID");
 		
 		try {
-		// driver.findElement(By.xpath("//*[@id=\"c_-1\"]/div[1]/a/span[1]")).click();
+		
 			driver.findElement(By.xpath("//*[@id=\"c_-1\"]/div[1]/a/span[1]")).click();
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath(repository.getProperty("computers.StatusOnline1"))));
 
 		} catch (Exception e) {
+			//branch 2 change
 			System.out.println("Computer status is not online");
 			moduleTestResult = "Fail";
 			testResultComment = "\n" + e.getMessage();
