@@ -55,8 +55,7 @@ public class AddCommentsToHost extends TestBase{
 	
 	@Test
 	public void addingCommentsfromSuperAdmin() {
-		//NewTestF
-		//Second Change
+		
 		login.launchURL(repository.getProperty("rpcLoginPage"));
 		login.enterText(repository.getProperty("txtbxEmail"), "ID", "suganya.panneerselvam+dec24@idrive.com");
 		login.enterText(repository.getProperty("txtbxPWD"), "ID", "test90");
@@ -71,6 +70,7 @@ public class AddCommentsToHost extends TestBase{
 			System.out.println("Computer status is not online");
 			moduleTestResult = "Fail";
 			testResultComment = "\n" + e.getMessage();
+			System.out.println(e.getMessage());
 			System.out.println(e.getMessage());
 		}
 		
