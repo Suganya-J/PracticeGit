@@ -62,6 +62,7 @@ public class AddCommentsToHost extends TestBase{
 		login.click(repository.getProperty("btnLogin"), "ID");
 		
 		try {
+		// driver.findElement(By.xpath("//*[@id=\"c_-1\"]/div[1]/a/span[1]")).click();
 			driver.findElement(By.xpath("//*[@id=\"c_-1\"]/div[1]/a/span[1]")).click();
 			wait.until(ExpectedConditions
 					.visibilityOfElementLocated(By.xpath(repository.getProperty("computers.StatusOnline1"))));
