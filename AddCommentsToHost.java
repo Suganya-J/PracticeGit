@@ -54,8 +54,8 @@ public class AddCommentsToHost extends TestBase{
 	}
 	
 	@Test
-	public void addingCommentsfromSuperAdmin() {
-		
+	public void addingCommentsfromSuperAdmi
+	
 		login.launchURL(repository.getProperty("rpcLoginPage"));
 		login.enterText(repository.getProperty("txtbxEmail"), "ID", "suganya.panneerselvam+dec24@idrive.com");
 		login.enterText(repository.getProperty("txtbxPWD"), "ID", "test90");
